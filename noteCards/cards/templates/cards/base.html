@@ -1,0 +1,31 @@
+    <!-- base.html -->
+    <html>
+      <head>
+        <title>Note Cards</title>
+<!--         <script src="http://fb.me/react-0.11.2.js"></script> -->
+
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+      <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.11.2/react-with-addons.min.js"></script>
+    <!--     <script src="http://fb.me/JSXTransformer-0.11.2.js"></script> -->
+        <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+        {% load staticfiles %}
+        <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+      </head>
+      <body>
+        <div class="row">
+          <h1 class="centered">Note Cards</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div id="content" class="col-md-8"></div>
+          <div class="col-md-2"></div>
+        </div>
+
+        <script src="{% static "build/react.js" %}"></script>
+      </body>
+    </html>
